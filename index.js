@@ -61,11 +61,11 @@ const sumOfThreeOrFive = () => {
       num += i;
     }
   }
-  console.log(num);
+  return num;
 };
 console.log("\n");
 console.log("Question 5:");
-sumOfThreeOrFive();
+console.log(sumOfThreeOrFive());
 
 // Question 6
 const isAllLowerCase = (string) => {
