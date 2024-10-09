@@ -53,11 +53,11 @@ console.log(betweenFiveAndTwenty(5)); // returns true
 console.log(betweenFiveAndTwenty(100)); // returns false
 
 // Question 5
-const sumOfThreeOrFive = (num) => {
-  for (let i = 1; i <= 1000; i++) {
-    if (i % 3 === 0) {
-      num += i;
-    } else if (i % 5 === 0) {
+const sumOfThreeOrFive = () => {
+  let num = 0;
+
+  for (let i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
       num += i;
     }
   }
@@ -65,7 +65,7 @@ const sumOfThreeOrFive = (num) => {
 };
 console.log("\n");
 console.log("Question 5:");
-sumOfThreeOrFive(3);
+sumOfThreeOrFive();
 
 // Question 6
 const isAllLowerCase = (string) => {
